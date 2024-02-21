@@ -1,0 +1,257 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* Barra de navegación y estilos de enlaces(botones del menu) */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 2px solid #000;
+}
+
+a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo de la imagen principal y texto encima de la imagen */
+.imagen img {
+  width: 100%;
+  filter: brightness(0.3);
+}
+
+.texto {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.item-2 img,
+.item-5 img {
+  height: auto;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.item-2 {
+  float: left;
+}
+
+.item-3 {
+  float: right;
+  width: 75%;
+}
+
+.item-4 {
+  float: left;
+  width: 75%;
+  clear: both;
+}
+
+.item-5 {
+  float: right;
+}
+
+/* Estilos para el footer */
+.container_footer {
+  width: 100%;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+  border-top: 2px solid #000;
+}
+
+.item-10 {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.item-6 {
+  margin-left: 20px;
+}
+
+.item-6 img,
+.item-8 img {
+  height: auto;
+  width: 20px;
+}
+
+/* Estilos para la sección "Carta" */
+.container2 {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 100px auto auto;
+  padding: 5px;
+  gap: 8px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-11 {
+  grid-row: 1 /2;
+  grid-column: 1 /2;
+  width: 100%;
+}
+
+.item-12 {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  width: 100%;
+  border: 2px solid #000;
+  background-color: midnightblue;
+  color: white;
+}
+
+.item-12 {
+  text-align: center;
+}
+
+.item-13 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  border: 1px solid #000;
+  height: 100%;
+  width: 100%;
+}
+
+.item-14 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 7;
+  border: 1px solid #000;
+  height: 100%;
+  width: 100%;
+}
+
+.item-13 p,
+.item-14 p {
+  text-align: center;
+  margin-top: 200%;
+}
+
+.item-15 {
+  grid-row: 3/4;
+  grid-column: 2/4;
+  padding: 5px;
+}
+
+.item-17 {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.item-18 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+
+.item-19 {
+  grid-row: 5/6;
+  grid-column: 2/4;
+  padding: 5px;
+}
+
+.item-20 {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+
+.item-21 {
+  grid-row: 6/7;
+  grid-column: 3/4;
+}
+
+/* Estilos para la sección "Galería de Imágenes" */
+.contenedor3 {
+  width: 70%;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contenedor3 img {
+  width: auto;
+  height: 125px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.item-22 {
+  width: 100%;
+}
+
+.contenedor3 img:hover {
+  border: 4px solid #000;
+  border-radius: 8px;
+  filter: brightness(0.7);
+}
+
+.item-23,
+.item-26,
+.item-27,
+.item-30 {
+  filter: brightness(0.7);
+}
+
+/* Estilos para los elementos de la galería de imágenes */
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.item-text {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+}
